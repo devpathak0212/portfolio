@@ -142,6 +142,10 @@ h1, h2 {
   margin: 0 auto;
 }
 
+#projects{
+  background-color: var(--bg-secondary);
+}
+
 /* Projects Section */
 .project-grid {
   display: grid;
@@ -150,7 +154,7 @@ h1, h2 {
 }
 
 .project-card {
-  background-color: var(--bg-secondary);
+  background-color: var(--bg-primary);
   border-radius: 12px;
   padding: 30px;
   text-align: left;
@@ -173,8 +177,9 @@ h1, h2 {
 .project-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  background-color: var(--bg-primary);
+  background-color: var(--bg-secondary);
   cursor: pointer;
+  box-shadow: 0 0px 12px #2c3b44;
 }
 
 .project-card h3 {
@@ -253,7 +258,7 @@ button:hover {
 footer {
   text-align: center;
   padding: 40px 0;
-  background-color: var(--bg-secondary);
+  background-color: var(--bg-primary);
   color: var(--text-secondary);
   font-size: 0.9em;
 }
@@ -261,7 +266,7 @@ footer {
 .social-links {
   position: absolute;
   left: 50%;
-  bottom: 5%;
+  bottom: 2%;
   transform: translate(-50%, -50%);
   margin: 0 auto;
   display: flex;
@@ -271,8 +276,8 @@ footer {
 }
 
 .social-links a {
-  margin-left: 50px;
-  margin-right: 50px;
+  /* margin-left: 50px;
+  margin-right: 50px; */
   font-family: "Chakra Petch", sans-serif;
   text-align: center;
   font-weight: 300;
@@ -285,8 +290,32 @@ footer {
 }
 
 .social-links a:hover {
-  color: var(--text-primary);
-  opacity: 50%;
+  color: var(--text-secondary);
+  opacity: 60%;
+}
+
+.github{
+  height: 40px;
+  width: 40px;
+  border-radius: 25px;
+}
+
+.linkedin{
+  height: 4 0px;
+  width: 40px;
+  border-radius: 100px;
+}
+
+.twitter{
+  height: 4 0px;
+  width: 40px;
+  border-radius: 100px;
+}
+
+.gmail{
+  height: 40px;
+  width: 40px;
+  border-radius: 25px;
 }
 
 /* Animations */
@@ -350,4 +379,21 @@ h2 {
 
 .flexy .project-card{
   margin-bottom: 20px;
+  background-color: var(--bg-secondary);
+}
+
+.flexy .project-card:hover{
+  background-color: var(--bg-primary);
+}
+
+.research{
+  background-color: var(--bg-secondary);
+}
+
+.research .project-card{
+  background-color: var(--bg-primary);
+}
+
+.research .project-card:hover{
+  background-color: var(--bg-secondary);
 }

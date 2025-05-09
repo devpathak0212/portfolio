@@ -1,4 +1,8 @@
 import React, { useState } from 'react';
+import github from './github.png';
+import gmail from './gmail.png'
+import linkedin from './linkedin.png'
+import twitter from './twitter.png'
 
 const DarkThemeWebsite = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,9 +15,10 @@ const DarkThemeWebsite = () => {
           <h1>Dev Pathak</h1>
           <p>AI/ML Engineer</p>
           <div className="social-links">
-            <a href="https://github.com/devpathak0212">GitHub</a>
-            <a href="https://mail.google.com/mail/">Email</a>
-            <a href='https://www.linkedin.com/in/dev-pathak0212/'>LinkedIn</a>
+            <a href="https://github.com/devpathak0212"><img className='github' src={github}></img></a>
+            <a href="https://mail.google.com/mail/"><img className='gmail' src={gmail}></img></a>
+            <a href='https://www.linkedin.com/in/dev-pathak0212/'><img className='linkedin' src={linkedin}></img></a>
+            <a href='https://www.twitter.com'><img className='twitter' src={twitter}></img></a>
           </div>
         </section>
 
@@ -91,7 +96,7 @@ knowledge of Python libraries like TensorFlow, Keras, and Scikit-learn.</p>
           </div>
         </section>
 
-        <section>
+        <section className='research'>
         <h2>Research Profile</h2>
         <div className="section-divider"></div>
           <div className='flexy'>
